@@ -1,0 +1,132 @@
+/* General body styles */
+body {
+  font-family: Arial, sans-serif; /* Set the font for the page */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  background-color: #4117c8; /* Background color */
+  color: white; /* Text color */
+}
+
+/* Container styles */
+.container {
+  text-align: center; /* Center text */
+  max-width: 600px; /* Maximum width */
+  margin: auto; /* Center horizontally */
+}
+
+/* Game board styles */
+#game-board {
+  display: grid; /* Use grid layout */
+  grid-template-rows: repeat(6, 50px); /* 6 rows of 50px each */
+  grid-gap: 10px; /* Gap between rows */
+  margin: 20px auto; /* Center and add margin */
+  width: 250px; /* Fixed width */
+}
+
+/* Row styles */
+.row {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(5, 1fr); /* 5 columns of equal width */
+  gap: 10px; /* Gap between columns */
+}
+
+/* Cell styles */
+.cell {
+  width: 40px; /* Fixed width */
+  height: 40px; /* Fixed height */
+  border: 2px solid #ccc; /* Border color */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  font-size: 20px; /* Font size */
+  font-weight: bold; /* Font weight */
+  color: black; /* Text color */
+}
+
+/* Styles for correct digit and position */
+.correct {
+  background-color: #6aaa64; /* Green background */
+  color: white; /* White text */
+}
+
+/* Styles for correct digit but wrong position */
+.present {
+  background-color: #c9b458; /* Yellow background */
+  color: white; /* White text */
+}
+
+/* Styles for incorrect digit */
+.absent {
+  background-color: #787c7e; /* Gray background */
+  color: white; /* White text */
+}
+
+/* Transition for cell */
+.cell {
+  transition: transform 0.2s; /* Smooth transform transition */
+}
+
+/* Animation for feedback */
+.cell.correct,
+.cell.present,
+.cell.absent {
+  animation: flip 0.5s; /* Flip animation */
+}
+
+/* Keyframes for flip animation */
+@keyframes flip {
+  0% {
+    transform: rotateY(0); /* Start rotation */
+  }
+  50% {
+    transform: rotateY(90deg); /* Halfway rotation */
+  }
+  100% {
+    transform: rotateY(0); /* End rotation */
+  }
+}
+
+/* Styles for the rules section */
+.rules {
+  text-align: left; /* Left-align text */
+  margin: 20px auto; /* Center and add margin */
+  background-color: #ffffff33; /* Semi-transparent white background */
+  padding: 10px; /* Padding inside the box */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Paragraph styles in the rules section */
+.rules p {
+  font-size: 18px; /* Font size */
+}
+
+/* List styles in the rules section */
+.rules ul {
+  margin: 10px 0; /* Margin */
+  padding-left: 20px; /* Left padding */
+}
+
+/* List item styles in the rules section */
+.rules li {
+  margin: 5px 0; /* Margin between items */
+}
+
+/* Styles for the quote frame */
+#quote-frame {
+  margin: 20px auto; /* Center and add margin */
+  padding: 20px; /* Padding inside the box */
+  border: 2px solid white; /* White border */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #ffffff22; /* Semi-transparent white background */
+  max-width: 80%; /* Maximum width */
+}
+
+/* Styles for the output area */
+#output-area {
+  font-size: 18px; /* Font size */
+  font-style: italic; /* Italic text */
+  text-align: center; /* Center text */
+}

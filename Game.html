@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the webpage -->
+    <title>Break the Code - Read a Quote</title>
+    <!-- Link to the external CSS file for styling the page -->
+    <link rel="stylesheet" href="Gamestyle.css" />
+  </head>
+  <body>
+    <!-- Main container for the game content -->
+    <div class="container">
+      <!-- Main heading of the game -->
+      <h1>Break the Code - Read a Quote</h1>
+      <!-- Subheading with a brief game description -->
+      <h2>Crack the 5-digit code in 6 tries!</h2>
+      <!-- Section containing the rules of the game -->
+      <div class="rules">
+        <ul>
+          <!-- Rule list -->
+          <li>Guess the 5-digit secret code within 6 attempts.</li>
+          <li>Each digit is between 0 and 9.</li>
+          <li>After each guess, you'll receive feedback:</li>
+          <ul>
+            <!-- Feedback descriptions -->
+            <li>
+              <span class="correct">Green</span> means the digit is correct and
+              in the right position.
+            </li>
+            <li>
+              <span class="present">Yellow</span> means the digit is correct but
+              in the wrong position.
+            </li>
+            <li>
+              <span class="absent">Gray</span> means the digit is not in the
+              code.
+            </li>
+          </ul>
+        </ul>
+      </div>
+      <!-- Div where the game board will be dynamically generated -->
+      <div id="game-board"></div>
+      <!-- Div for displaying the quote -->
+      <div id="quote-frame">
+        <div id="output-area"></div>
+      </div>
+    </div>
+    <!-- Link to the external JavaScript file for game logic -->
+    <script src="Gamejs.js"></script>
+  </body>
+</html>
