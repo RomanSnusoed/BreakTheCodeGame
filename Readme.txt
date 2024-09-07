@@ -1,5 +1,5 @@
 Break the Code - Read a Quote
-Roman Korchynskyi
+
 
 Overview
 
